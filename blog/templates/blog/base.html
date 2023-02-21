@@ -1,7 +1,7 @@
 {%load static%}
 <html>
     <head>
-        <title>Overwatch blog</title>
+        <title>Информация о героях Overwatch</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{%static 'css/blog.css'%}">
@@ -12,18 +12,26 @@
        {%if user.is_authenticated%}
     <a href="{%url 'post_new'%}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {%endif%}
-        <h1><a href="/">Django Girls Blog</a></h1>
+
+        <h1>
+            <img  src="https://www.clavecd.es/wp-content/uploads/overwatch-2-closed-beta_featured.png" height="200">
+            <a href="/">Персонажи Overwatch</a>
+            <img  src="https://thumbs.gfycat.com/HiddenSpitefulBushsqueaker-size_restricted.gif">
+        </h1>
+
 
     </div>
     <div class="content container">
 
-        <div class="row">
-            <div class="col-md-8">
+        <div class="table">
+            <div class="col-md-8" >
             {%block content%}
             {%endblock%}
             </div>
+
         </div>
+         <img  src="https://media.tenor.com/_twlemlAIt0AAAAd/widowmaker-overwatch.gif">
     </div>
-   <img  src="https://cs8.pikabu.ru/post_img/big/2017/07/08/11/149953782514861875.jpg">
+
 </body>
 </html>
